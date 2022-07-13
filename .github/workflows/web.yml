@@ -1,4 +1,4 @@
-name: Test
+name: Gh-Pages
 
 on:
   push:
