@@ -17,13 +17,13 @@ class MyInfo extends StatelessWidget {
             CircleAvatar(
 
               radius: 50,
-              backgroundImage: AssetImage("assets/images/islom.png",),
+              backgroundImage: AssetImage("assets/images/my.jpeg",),
               // child: Image.asset("assets/images/islom.png"),
             ),
             Spacer(),
             Text(
               "ISLOMJON RIKHSIEV ",
-              style: Theme.of(context).textTheme.subtitle2,
+              style: Theme.of(context).textTheme.titleSmall,
             ),
             Text(
               "Flutter  & IOS Developer",
