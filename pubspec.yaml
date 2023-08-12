@@ -38,6 +38,8 @@ dependencies:
   flutter_svg: ^0.22.0
   animated_text_kit: ^4.2.1
   url_launcher: ^6.0.15
+  download: ^1.0.0
+
 
 dev_dependencies:
   flutter_test:

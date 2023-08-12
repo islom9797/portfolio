@@ -7,7 +7,8 @@ import 'knowledges.dart';
 import 'my_info.dart';
 import 'skills.dart';
 import 'package:url_launcher/url_launcher.dart';
-
+import 'package:download/download.dart';
+import 'dart:html' as html;
 class SideMenu extends StatelessWidget {
   void _launchURL() async {
     if (!await launch(_url)) throw 'Could not launch $_url';
@@ -48,7 +49,9 @@ class SideMenu extends StatelessWidget {
                     Divider(),
                     SizedBox(height: defaultPadding / 2),
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        html.window.open("assets/resume.pdf", "text");
+                      },
                       child: FittedBox(
                         child: Row(
                           children: [
