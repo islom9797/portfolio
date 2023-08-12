@@ -3,6 +3,8 @@
 A new Flutter project.
 <br>
 https://islom9797.github.io/portfolio/#/
+ https://portfolio-website-my.web.app
+
 
 ## Getting Started
 
