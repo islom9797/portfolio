@@ -34,14 +34,14 @@ class Skills extends StatelessWidget {
             Expanded(
               child: AnimatedCircularProgressIndicator(
                 percentage: 0.4,
-                label: "Git",
+                label: "Swift",
               ),
             ),
             SizedBox(width: defaultPadding),
             Expanded(
               child: AnimatedCircularProgressIndicator(
                 percentage: 0.50,
-                label: "Firebase",
+                label: "Kotlin",
               ),
             ),
           ],

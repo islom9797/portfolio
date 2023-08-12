@@ -13,9 +13,9 @@ class HomeScreen extends StatelessWidget {
     return MainScreen(
       children: [
         HomeBanner(),
-        HighLightsInfo(),
+        // HighLightsInfo(),
         MyProjects(),
-        Recommendations(),
+        // Recommendations(),
       ],
     );
   }

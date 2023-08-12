@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 
 import '../../../constants.dart';
@@ -36,7 +37,12 @@ class ProjectCard extends StatelessWidget {
           ),
           Spacer(),
           TextButton(
-            onPressed: () {},
+            onPressed: () async{
+              final Uri url = Uri.parse(project.link!);
+              if (!await launchUrl(url)) {
+              throw Exception('Could not launch $url');
+              }
+            },
             child: Text(
               "Read More >>",
               style: TextStyle(color: primaryColor),

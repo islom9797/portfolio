@@ -15,8 +15,10 @@ class MyInfo extends StatelessWidget {
           children: [
             Spacer(flex: 2),
             CircleAvatar(
+
               radius: 50,
-              backgroundImage: AssetImage("assets/images/islom.PNG"),
+              backgroundImage: AssetImage("assets/images/islom.png",),
+              // child: Image.asset("assets/images/islom.png"),
             ),
             Spacer(),
             Text(
@@ -24,7 +26,7 @@ class MyInfo extends StatelessWidget {
               style: Theme.of(context).textTheme.subtitle2,
             ),
             Text(
-              "Flutter Developer &",
+              "Flutter  & IOS Developer",
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontWeight: FontWeight.w200,

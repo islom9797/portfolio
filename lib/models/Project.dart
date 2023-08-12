@@ -1,38 +1,59 @@
 class Project {
-  final String? title, description;
+  final String? title, description,link;
 
-  Project({this.title, this.description});
+  Project({this.title, this.description,this.link});
 }
 
 List<Project> demo_projects = [
   Project(
-    title: "Responsive Admin Panel or Dashboard - Flutter UI",
-    description:
-        "On Flutter V2.* web officially supported on a stable branch. Today I share an Admin panel or you can call it dashboard UI build with flutter. Now you can build your app dashboard using flutter. This dashboard contains almost everything that you need like a chart, table, nice small card for showing info.",
+    link: "https://play.google.com/store/apps/details?id=com.hamkorbank.mobile",
+    title: "Banking App in Flutter - Hamkor",
+    description:        "The Hamkor mobile app is your financial and digital assistant. To make using the application even more comfortable, we have made significant changes and completely updated it. If you are not a Hamkorbank client, then you have the opportunity to become one by downloading the application and applying for a microloan or debit card for free. ",
   ),
   Project(
-    title: "E-Commerce Complate App - Flutter UI",
-    description:
-        "In the first part of our complete e-commerce app, we show you how you can create a nice clean onboarding screen for your e-commerce app that can run both Andriod and iOS devices because it builds with flutter. Then on the second episode, we build a Sign in, Forgot Password screen with a custom error indicator.",
+    link: "https://play.google.com/store/apps/details?id=com.resoinc.supershot",
+    title: "Golf ball trajectory tracker  - SuperShot",
+    description: "Special service for amateur golfers"
+        " Artificial intelligence predicts your golf ball trajectory.And show distance of shoot,App sends videos uploaded or recorded in app send it to server to analyze video",
   ),
   Project(
-    title: "Outlook Email App Redesign - Flutter Fully Responsive Design UI",
+    link: "https://play.google.com/store/apps/details?id=com.sample.edgedetectionexample",
+      title: "Optical character recognition app – SuperDOC",
+      description: "Free text extraction"
+          " Extracting the text contained in the photographed image,"
+          " Allows you to copy text for free.We used TTS(Text to speech) model"),
+  Project(
+    link: "https://play.google.com/store/apps/details?id=com.fourlab.lostBall",
+      title: "Find your lost golf ball with AI - Lostball",
+      description: "App used AI model trained for detection golf ball and detect ball via camera"),
+  Project(
+    link: "https://play.google.com/store/apps/details?id=com.anabada.app",
+      title: "Luxury bag barter app - Annabada",
+      description: "Now try trading your luxury items for Annabada!"
+          "Anabada - the first used online barter platform!"
+          "I supported app,Usually bug fixes"),
+  Project(
+   link: "https://play.google.com/store/apps/details?id=com.kof.ficl_app",
+    title: "FICL Manager- Flutter UI",
     description:
-        "We redesign the outlook app also make it responsive so that you can run it everywhere on your phone, tab, or web. In this flutter responsive video, we will show you the real power of flutter. Make mobile, web, and desktop app from a single codebase.",
+        "App based on Webview .We add feature using Camera,Bank certificate,push and firebase which don't support from webview",
   ),
   Project(
-    title: "Chat/Messaging App Light and Dark Theme - Flutter UI",
+    link: "https://play.google.com/store/apps/details?id=com.gcgfuntact.mobile",
+    title: "Credit Guarantee Fund- Easy One",
     description:
-        "Today we gonna build messing/chat app #ui using #flutter that runs both Android and iOS devices also has a dark and light theme. We create in total 4 screens all of that support both Dark Theme and Light Theme. At first, we design a welcome screen that contains an image with a tag line also has a skip button.",
+    "App based on Webview .We add feature using Camera,Bank certificate,push and firebase which don't support from webview",
   ),
   Project(
-    title: "Welcome page, Login Page and Sign up page - Flutter UI",
+    link: "https://play.google.com/store/apps/details?id=kr.co.inocoms.heartbeat",
+    title: "ECG(Electrocardiography) get via ECG device- Breathm",
     description:
-        "In the first part of our complete e-commerce app, we show you how you can create a nice clean onboarding screen for your e-commerce app that can run both Andriod and iOS devices because it builds with flutter. Then on the second episode, we build a Sign in, Forgot Password screen with a custom error indicator.",
+    "App based on ECG device show ECG state of fetus ",
   ),
   Project(
-    title: "Covid-19 App - Flutter UI",
+    link: "https://play.google.com/store/apps/details?id=com.wooridoctor.woodocapp",
+    title: "Chat with  psychological counselor- 마음편해",
     description:
-        "We redesign the outlook app also make it responsive so that you can run it everywhere on your phone, tab, or web. In this flutter responsive video, we will show you the real power of flutter. Make mobile, web, and desktop app from a single codebase.",
+    "You can chat with psychological counselor  when you have stress, and make reservation for  counselor",
   ),
 ];

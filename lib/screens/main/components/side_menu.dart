@@ -39,7 +39,7 @@ class SideMenu extends StatelessWidget {
                     ),
                     AreaInfoText(
                       title: "Age",
-                      text: "24",
+                      text: "26",
                     ),
                     Skills(),
                     SizedBox(height: defaultPadding),

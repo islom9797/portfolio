@@ -24,7 +24,7 @@ class Knowledges extends StatelessWidget {
         ),
         KnowledgeText(text: "Flutter, Dart"),
         KnowledgeText(text: "Scrum,Agile"),
-        KnowledgeText(text: "Java,Kotlin"),
+        KnowledgeText(text: "Swift,Kotlin"),
         KnowledgeText(text: "GIT Knowledge"),
       ],
     );
