@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/screens/home/home_screen.dart';
+import 'package:portfolio/screens/interview/interview_questions.dart';
 
 import 'constants.dart';
 
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
             ),
       ),
       home: HomeScreen(),
+      // home: InterviewQuestions(),
     );
   }
 }

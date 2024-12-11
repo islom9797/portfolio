@@ -56,4 +56,45 @@ List<Project> demo_projects = [
     description:
     "You can chat with psychological counselor  when you have stress, and make reservation for  counselor",
   ),
+  Project(
+    link: "https://play.google.com/store/apps/details?id=kr.co.kodc.dadonda&hl=ru",
+    title: "Dadonda - Patrol Management System",
+    description:
+    "Patrol Management System",
+  ),
+
+  Project(
+    link: "https://play.google.com/store/apps/details?id=kr.co.kodc.momslifenew&hl=ru",
+    title: "Daylog - App for pregnant women",
+    description:
+    "App for pregnant women",
+  ),
+
+  Project(
+    link: "https://play.google.com/store/apps/details?id=kr.co.kodc.psoss&hl=ru",
+    title: "풍산노조종합 - App for use within the company",
+    description:
+    "App for use within the company, Employer can check news ,statistics",
+  ),
+
+  Project(
+    link: "https://play.google.com/store/apps/details?id=kr.co.kodc.jcntv&hl=ru",
+    title: "JCN 울산중앙방송 - Broadcastng company app",
+    description:
+    "Broadcastng company app",
+  ),
+
+  Project(
+    link: "https://play.google.com/store/apps/details?id=kr.co.inocoms.heartbeat&hl=en_US",
+    title: "브리듬 - App measurement bpm for child in perganent state",
+    description:
+    "App measurement bpm for child in perganent state",
+  ),
+
+  Project(
+    link: "https://apps.apple.com/lt/app/%EC%9A%B0%EB%A6%AC%EC%9D%98-%EB%AA%A8%EB%B0%9C/id6446164813",
+    title: "우리의 모발 - App for care hair",
+    description:
+    "App for care hair",
+  ),
 ];

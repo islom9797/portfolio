@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:portfolio/screens/interview/interview_questions.dart';
 import '../../../constants.dart';
 import 'area_info_text.dart';
 import 'coding.dart';
@@ -8,15 +9,22 @@ import 'my_info.dart';
 import 'skills.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'dart:html' as html;
-class SideMenu extends StatelessWidget {
-  void _launchURL() async {
-    if (!await launch(_url)) throw 'Could not launch $_url';
+// static const String _url = 'https://flutter.dev';
+void launchURL(String urlString) async {
+  final Uri url = Uri.parse(urlString);
+  if (!await launchUrl(url)) {
+    throw Exception('Could not launch $urlString');
   }
+  throw 'Could not launch $urlString';
+}
+
+class SideMenu extends StatelessWidget {
 
   const SideMenu({
     Key? key,
   }) : super(key: key);
-  static const String _url = 'https://flutter.dev';
+
+
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -39,7 +47,7 @@ class SideMenu extends StatelessWidget {
                     ),
                     AreaInfoText(
                       title: "Age",
-                      text: "26",
+                      text: "27",
                     ),
                     Skills(),
                     SizedBox(height: defaultPadding),
@@ -69,6 +77,15 @@ class SideMenu extends StatelessWidget {
                         ),
                       ),
                     ),
+                    TextButton(
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      const InterviewQuestions()));
+                        },
+                        child: Text("Interview Questions")),
                     Container(
                       margin: EdgeInsets.only(top: defaultPadding),
                       color: Color(0xFF24242E),
@@ -77,18 +94,23 @@ class SideMenu extends StatelessWidget {
                           Spacer(),
                           IconButton(
                             onPressed: () {
-                              _launchURL();
-
+                              launchURL(
+                                  "https://www.linkedin.com/in/islomjon-rikhsiev");
                             },
                             icon: SvgPicture.asset("assets/icons/linkedin.svg"),
                           ),
                           IconButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              launchURL("https://github.com/islom9797");
+                            },
                             icon: SvgPicture.asset("assets/icons/github.svg"),
                           ),
                           IconButton(
-                            onPressed: () {},
-                            icon: SvgPicture.asset("assets/icons/twitter.svg"),
+                            onPressed: () {
+                              launchURL("https://t.me/islom979");
+                            },
+                            icon: Icon(Icons.telegram),
+                            // icon: SvgPicture.asset("assets/icons/twitter.svg"),
                           ),
                           Spacer(),
                         ],
